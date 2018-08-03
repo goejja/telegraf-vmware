@@ -18,7 +18,7 @@ RUN apt-get -q update && apt-get install -yq --no-install-recommends python3 per
   && cpan install Path::Class \
   && cpan install Math::Random::MT::Auto \
   && cpan install Object::InsideOut \
-  && pip install --upgrade pyvmomi \
+  && pip3 install --upgrade pyvmomi \
   && echo "Ubuntu" > /etc/fake-release \
   && tar -C /tmp -xzf /tmp/${VSPHERE_SDK_PERL} \
   && sed -i '2581,2595d' /tmp/vmware-vsphere-cli-distrib/vmware-install.pl \
