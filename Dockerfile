@@ -4,8 +4,8 @@ ARG VSPHERE_SDK_PERL=VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 
 COPY vmware-sdk/${VSPHERE_SDK_PERL} /tmp/
 
-RUN apt-get -q update && apt-get install -yq --no-install-recommends python perl wget \
-  python-pip kmod  e2fsprogs perl-doc libxml2 libssl-dev libcrypt-ssleay-perl \
+RUN apt-get -q update && apt-get install -yq --no-install-recommends python3 perl wget \
+  python3-pip python3-requests kmod  e2fsprogs perl-doc libxml2 libssl-dev libcrypt-ssleay-perl \
   libxml-libxml-perl iputils-ping make gcc \
   libextutils-makemaker-cpanfile-perl libmodule-build-perl liblwp-protocol-https-perl \
   libtry-tiny-perl libdevel-stacktrace-perl libclass-data-inheritable-perl \
