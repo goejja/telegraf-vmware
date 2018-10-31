@@ -1,4 +1,4 @@
-FROM telegraf:1.8.0
+FROM telegraf:1.8.2
 
 COPY files/telegraf /usr/bin/telegraf
 
