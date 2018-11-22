@@ -22,8 +22,7 @@ RUN apt-get -q update && apt-get install -yq --no-install-recommends python3 wge
   && sed -i '2581,2595d' /tmp/vmware-vsphere-cli-distrib/vmware-install.pl \
   && /tmp/vmware-vsphere-cli-distrib/vmware-install.pl -d EULA_AGREED=yes \
   && rm -fr /tmp/vmware-vsphere-cli-distrib && rm -fr /tmp/VMware-* \
-  && apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/* \
-  && cpan install JSON::Parse
+  && cpan install JSON::Parse \
   && pip3 install --upgrade setuptools \
   && pip3 install --upgrade pyvmomi \
   && echo "Ubuntu" > /etc/fake-release \
