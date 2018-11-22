@@ -6,7 +6,7 @@ COPY vmware-sdk/${VSPHERE_SDK_PERL} /tmp/
 
 RUN apt-get -q update && apt-get install -yq --no-install-recommends python3 wget \
   python3-pip python3-requests kmod iputils-ping make gcc \
-  perl e2fsprogs libcrypt-ssleay-perl libxml-libxml-perl \
+  perl e2fsprogs libssl-dev libcrypt-ssleay-perl libxml-libxml-perl \
   libextutils-makemaker-cpanfile-perl libmodule-build-perl liblwp-protocol-https-perl \
   libtry-tiny-perl libdevel-stacktrace-perl libclass-data-inheritable-perl \
   libconvert-asn1-perl libcrypt-openssl-rsa-perl libcrypt-openssl-x509-perl \
