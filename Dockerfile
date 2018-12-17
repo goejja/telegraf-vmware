@@ -1,4 +1,4 @@
-FROM telegraf:1.8.3
+FROM telegraf:1.9.1
 
 ARG VSPHERE_SDK_PERL=VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 
